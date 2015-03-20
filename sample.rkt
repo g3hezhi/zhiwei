@@ -13,5 +13,9 @@
 (and #f #t)
 (and #f #f)
 (and #t #t)
+(or #f #t)
+(or #f #f)
+(or #t #t)
+(or #t #f)
 
 

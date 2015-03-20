@@ -135,7 +135,8 @@ evaluate (Equal (Boolean x) (Boolean y)) =
 	Boolean (x == y)
 evaluate (Equal (Number x) (Number y)) = 
 	Boolean (x == y)
--- and,or,if,cond
+-- and,or,cond
 evaluate (And (Boolean x) (Boolean y)) = 
 	Boolean (x&&y)
- 
+evaluate (Or (Boolean x) (Boolean y)) = 
+	Boolean (x||y) 
